@@ -1,6 +1,10 @@
 # LaserSeteroCalibration
 extrinsic calibration of rotate 3D laset scaner or vlp16 with zed setero camera
 ====
+
+## sensors
+![sensors](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/sensor.JPG)
+
 ## origin image
 ![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/results/6/reim.png)
 
@@ -10,6 +14,9 @@ extrinsic calibration of rotate 3D laset scaner or vlp16 with zed setero camera
 
 ## image registration to pointcloud
 ![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/results/6/Screenshot%20from%202017-07-07%2011-05-02.png)
+
+## pointcloud reproject to image
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/results/6/project06.png)
 
 ## pointcloud reproject to image
 ![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/results/6/project06.png)
