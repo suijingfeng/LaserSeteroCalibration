@@ -1,0 +1,39 @@
+function draw_range_fig(hObject, eventdata, handles)
+
+% Restrict to data with far > y > near
+scan=handles.current_scan;
+scan(scan(:,2)<handles.nearVal,:)=[];
+scan(scan(:,2)>handles.farVal,:)=[];
+
+% Perspective projection (x/y, z/y)
+scanp=[scan(:,1)./scan(:,2) scan(:,3)./scan(:,2)];
+
+% X,Y bounds of projection
+xBounds=[ min(scanp(:,1)) max(scanp(:,1))];
+yBounds=[ min(scanp(:,2)) max(scanp(:,2))];
+
+% Size of a square pixel
+pixel_size=max([range(xBounds) range(yBounds)])/150;
+
+% Choose size of grid that will serve as the range image (n_cols n_rows)
+nx=ceil(range(xBounds)/pixel_size) + 1;
+ny=ceil(range(yBounds)/pixel_size) + 1;
+grid=zeros(ny,nx);
+
+% Add points to grid
+ix=floor( (scanp(:,1)-xBounds(1))/pixel_size ) + 1;
+iy=floor( (yBounds(2)-scanp(:,2))/pixel_size ) + 1;
+ii=sub2ind(size(grid),iy,ix);
+grid(ii)=max(grid(ii),scan(:,2));
+
+grid=-grid;
+% Set values of zero to minimum value
+grid(grid==0) = min(grid(:));
+colormap(jet);
+axes(handles.range_image_axis);
+imagesc(grid);
+axis('equal');
+title(handles.current_scanfilename);
+%colorbar
+
+% Store some variables that will be needed later

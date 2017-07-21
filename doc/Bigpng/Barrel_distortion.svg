@@ -1,0 +1,19 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="768"
+   height="768"
+   version="1.0">
+  <defs>
+    <g id="curves">
+      <path d="M 256,0 q -32 384 0 768" style="fill:none;stroke:black;stroke-width:2.5" />
+      <path d="M 128,0 q -64 384 0 768" style="fill:none;stroke:black;stroke-width:2.5" />
+      <path d="M   0,0 q -96 384 0 768" style="fill:none;stroke:black;stroke-width:2.5" />
+    </g>
+  </defs>
+  <path d="M 384,0 V 768 M 0,384 H 768" style="fill:none;stroke:black;stroke-width:2.5" />
+  <use xlink:href="#curves" />
+  <use xlink:href="#curves" transform="rotate(90,384,384)" />
+  <use xlink:href="#curves" transform="rotate(180,384,384)" />
+  <use xlink:href="#curves" transform="rotate(270,384,384)" />
+</svg>

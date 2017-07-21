@@ -1,0 +1,29 @@
+version 1.1
+(11/10/2006) : Linux bug fix
+- Apparently the 'uigetfile' function sometimes does not work
+correctly on linux (search for 'uigetfile linux bug' for details). It
+is currently fixed by forcing Matlab to not use native system dialogs,
+and the appropriate instruction has been added to the
+select_calibfile_fn callback.
+- Documentation has been updated with a (hopefully) better
+explanation of the math through an added appendix.
+
+(03/01/2006) : backward compatibility
+- Set MAT file preferences to support Matlab v6 compatiblity. This
+will make the fig files larger as v7 uses some sort of compression
+scheme.
+- Some of the fig files seemed corrupted and unreadable in Matlab on
+windows. Checking them with matcat.m seems to fix the problem. I added
+a script check_fig_files to look at each of them and print out status
+messages.
+
+version 1.0 - the "inaugral release"
+(11/14/2005)
+Improvements from previous internal beta version include:
+- Automatic aligment for correct rendering of range images
+- Ability to specify vector corresponding to "up" direction
+- Ability to load calibration file from GUI
+- Fixed bug with writing .m output
+- Added "About" info
+- Guard against exiting without saving calibration results
+

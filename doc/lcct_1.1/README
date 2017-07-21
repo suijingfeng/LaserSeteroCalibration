@@ -1,0 +1,55 @@
+--------------------------------------
+Files and directories in this package:
+--------------------------------------
+AUTHORS
+CREDITS
+DISCLAIMER
+doc/lcct_techreport.pdf : Documentation
+sample_data/ :
+  15 sample ladar data (laser_target*.xyz) and corresponding images
+  (img_target*.jpg) for testing
+sample_results/:
+  Calib_Results.m
+  Calib_Results.mat
+    Sample camera calibration results
+  Laser_Cam_calib_1.m
+  Laser_Cam_calib_1.m
+    Sample laser-camera calibration parameter results
+  rgbScan.wrl
+    Sample VRML of point cloud of laser_target1.xyz colorized with
+    img_target1.jpg
+
+src/
+ about_dlg.fig
+ about_dlg.m
+ draw_range_fig.asv
+ draw_range_fig.m
+ exit_modaldlg.fig
+ exit_modaldlg.m
+ lasercamcalib.asv
+ lasercamcalib.fig
+ lasercamcalib.m
+ project_points2.m
+ quat2rot.m
+ range.m
+ rigid_motion.m
+ rodrigues.m
+ rot2quat.m
+ select_from_range_fig.m
+ selectPolygon.m
+ tls.m
+ tls_robust.m
+ view_range_image.asv
+ view_range_image.fig
+ view_range_image.m
+ xyzrgb2vrml.asv
+ xyzrgb2vrml.m
+
+test_data/ : Sample data to test calibration result by colorizing
+ img_box1.jpg
+ img_box2.jpg
+ img_box3.jpg
+ laser_box1.xyz
+ laser_box2.xyz
+ laser_box3.xyz
+
