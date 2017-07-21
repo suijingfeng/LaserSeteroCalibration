@@ -2,25 +2,30 @@
 extrinsic calibration of rotate 3D laset scaner or vlp16 with zed setero camera
 ====
 
-## sensors
-![sensors configuration](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/sensor.JPG)
+## sensors configuration
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/sensor.JPG)
 
-![frames](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/frame_LaserStereoCalibration.jpg)
+## frames
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/frame_LaserStereoCalibration.jpg)
 
-![A scene](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/barrelDistortion.png)
+## A scene
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/barrelDistortion.png)
 
-![Original pointcloud](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/pc8_ori.png)
+## Original pointcloud
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/pc8_ori.png)
 
-![Plane extracted](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/pc8_Plane.png)
+## Plane extracted
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/pc8_Plane.png)
 
-![remain cloud](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/pc8_remainCloud.png)
+## remain cloud
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/pc8_remainCloud.png)
 
 
 ## pointcloud reproject to image
-![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec6.png)
-![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec7.png)
-![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec10.png)
-![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec11.png)
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec6.JPG)
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec7.JPG)
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec10.JPG)
+![](https://github.com/suijingfeng/LaserSeteroCalibration/blob/master/doc/ec11.JPG)
 
 
 
